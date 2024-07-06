@@ -1,0 +1,80 @@
+Testcase 1:
+512
+32
+4
+LRU
+WB
+
+R: 0x00e0
+R: 0x0000
+R: 0x0020
+W: 0x0020
+W: 0x00c0
+W: 0x0280
+W: 0x02a0
+R: 0x1fc0
+R: 0x0140
+W: 0x0000
+
+Expected Output:
+
+CS2323 Cache Simulation - CS22BTECH11020
+
+Address: 0x000000e0, Set: 0x00000003, Miss, Tag: 0x00000001
+Address: 0x00000000, Set: 0x00000000, Miss, Tag: 0x00000000
+Address: 0x00000020, Set: 0x00000001, Miss, Tag: 0x00000000
+Address: 0x00000020, Set: 0x00000001, Hit, Tag: 0x00000000
+Address: 0x000000c0, Set: 0x00000002, Miss, Tag: 0x00000001
+Address: 0x00000280, Set: 0x00000000, Miss, Tag: 0x00000005
+Address: 0x000002a0, Set: 0x00000001, Miss, Tag: 0x00000005
+Address: 0x00001fc0, Set: 0x00000002, Miss, Tag: 0x0000003f
+Address: 0x00000140, Set: 0x00000002, Miss, Tag: 0x00000002
+Address: 0x00000000, Set: 0x00000000, Hit, Tag: 0x00000000
+
+Total Hits: 2
+Total Misses: 8
+Total Accesses: 10
+
+
+Testcase 2:
+64
+8
+4
+FIFO
+WT
+
+W: 0x02e0
+R: 0x0100
+W: 0x00e0
+W: 0x0200
+R: 0x00e0
+R: 0x23c6
+R: 0x0020
+W: 0x0260
+W: 0x01c0
+W: 0x01c0
+R: 0x0000
+R: 0x0000
+R: 0x01a0
+
+Expected Output:
+
+CS2323 Cache Simulation - CS22BTECH11020
+
+Address: 0x000002e0, Set: 0x00000000, Miss, Tag: 0x0000002e
+Address: 0x00000100, Set: 0x00000000, Miss, Tag: 0x00000010
+Address: 0x000000e0, Set: 0x00000000, Miss, Tag: 0x0000000e
+Address: 0x00000200, Set: 0x00000000, Miss, Tag: 0x00000020
+Address: 0x000000e0, Set: 0x00000000, Miss, Tag: 0x0000000e
+Address: 0x000023c6, Set: 0x00000000, Miss, Tag: 0x0000023c
+Address: 0x00000020, Set: 0x00000000, Miss, Tag: 0x00000002
+Address: 0x00000260, Set: 0x00000000, Miss, Tag: 0x00000026
+Address: 0x000001c0, Set: 0x00000000, Miss, Tag: 0x0000001c
+Address: 0x000001c0, Set: 0x00000000, Miss, Tag: 0x0000001c
+Address: 0x00000000, Set: 0x00000000, Miss, Tag: 0x00000000
+Address: 0x00000000, Set: 0x00000000, Hit, Tag: 0x00000000
+Address: 0x000001a0, Set: 0x00000000, Miss, Tag: 0x0000001a
+
+Total Hits: 1
+Total Misses: 12
+Total Accesses: 13

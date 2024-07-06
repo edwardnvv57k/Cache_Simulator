@@ -1,0 +1,30 @@
+CS2323 Cache Simulation - CS22BTECH11020
+
+Address: 0x00000000, Set: 0x00000000, Miss, Tag: 0x00000000
+Address: 0x00000020, Set: 0x00000000, Miss, Tag: 0x00000001
+Address: 0x00000040, Set: 0x00000000, Miss, Tag: 0x00000002
+Address: 0x00000060, Set: 0x00000000, Miss, Tag: 0x00000003
+Address: 0x00000080, Set: 0x00000000, Miss, Tag: 0x00000004
+Address: 0x000000a0, Set: 0x00000000, Miss, Tag: 0x00000005
+Address: 0x000000c0, Set: 0x00000000, Miss, Tag: 0x00000006
+Address: 0x000000e0, Set: 0x00000000, Miss, Tag: 0x00000007
+Address: 0x00000080, Set: 0x00000000, Hit, Tag: 0x00000004
+Address: 0x000000a0, Set: 0x00000000, Hit, Tag: 0x00000005
+Address: 0x000000c0, Set: 0x00000000, Hit, Tag: 0x00000006
+Address: 0x000000e0, Set: 0x00000000, Hit, Tag: 0x00000007
+Address: 0x00000580, Set: 0x00000000, Miss, Tag: 0x0000002c
+Address: 0x000005a0, Set: 0x00000000, Miss, Tag: 0x0000002d
+Address: 0x000005c0, Set: 0x00000000, Miss, Tag: 0x0000002e
+Address: 0x000005e0, Set: 0x00000000, Miss, Tag: 0x0000002f
+Address: 0x00000080, Set: 0x00000000, Hit, Tag: 0x00000004
+Address: 0x000000a0, Set: 0x00000000, Hit, Tag: 0x00000005
+Address: 0x000000c0, Set: 0x00000000, Hit, Tag: 0x00000006
+Address: 0x000000e0, Set: 0x00000000, Hit, Tag: 0x00000007
+Address: 0x00000000, Set: 0x00000000, Miss, Tag: 0x00000000
+Address: 0x00000020, Set: 0x00000000, Miss, Tag: 0x00000001
+Address: 0x00000040, Set: 0x00000000, Miss, Tag: 0x00000002
+Address: 0x00000060, Set: 0x00000000, Miss, Tag: 0x00000003
+
+Total Hits: 8
+Total Misses: 16
+Total Accesses: 24
